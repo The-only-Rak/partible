@@ -361,7 +361,7 @@ impl<C: Hash + Ord + Clone, T: ?Sized, const N: usize> Package<C, T, N> {
         Some(Self { data: res })
     }
     /// > This function takes a mutable reference to a `HashMap` and a function that takes a reference
-    /// to a `Key` and `Value` pair and returns a `bool`. It then returns an `Option<HashMap>` that
+    /// to a `Key` and `Value` pair and returns a `bool`. It then returns an `Option<Self>` that
     /// contains all the `Key` and `Value` pairs that the function returns `true` for
     ///
     /// Arguments:
